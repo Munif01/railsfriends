@@ -1,0 +1,12 @@
+<div class="p-3 mb-2 bg-light text-dark">
+    <h1 class="display-1"> <%= @friend.first_name %> <%= @friend.last_name %> </h1>
+    <p class="fs-5 text-secondary">
+        <%= @friend.email %> <br />
+        <%= @friend.phone %> <br />
+        <%= @friend.twitter %>
+    </p>
+    </h1>
+
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %>
+    <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+</div>
